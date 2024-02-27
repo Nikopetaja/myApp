@@ -1,8 +1,0 @@
-// src/components/Tab1.js
-import React from 'react';
-
-const Tab3 = () => {
-  return <div>Tab 3 Content</div>;
-};
-
-export default Tab3;

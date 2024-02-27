@@ -1,8 +1,8 @@
-// src/pages/Tab1.js
+// src/pages/Tab3.js
 import React from 'react';
 import { Nav } from 'react-bootstrap';
 
-const Tab1 = () => {
+const Tab3 = () => {
   return (
     <div>
       <Nav>
@@ -16,9 +16,9 @@ const Tab1 = () => {
           <Nav.Link href="/tab3">Tab 3</Nav.Link>
         </Nav.Item>
       </Nav>
-      <div>Tab 1 Content</div>
+      <div>Tab 3 Content</div>
     </div>
   );
 };
 
-export default Tab1;
+export default Tab3;
