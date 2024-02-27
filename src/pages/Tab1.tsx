@@ -1,25 +1,18 @@
-// src/pages/Tab1.js
+// Tab1.tsx
 import React from 'react';
-import { Nav } from 'react-bootstrap';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 
-
-const Tab1 = () => {
-  return (
-    <div>
-      <Nav>
-        <Nav.Item>
-          <Nav.Link href="/tab1">Tab 1</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link href="/tab2">Tab 2</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link href="/tab3">Tab 3</Nav.Link>
-        </Nav.Item>
-      </Nav>
-      <div>Tab 1 Content</div>
-    </div>
-  );
-};
+const Tab1: React.FC = () => (
+  <IonPage>
+    <IonHeader>
+      <IonToolbar>
+        <IonTitle>Tab 1</IonTitle>
+      </IonToolbar>
+    </IonHeader>
+    <IonContent>
+      <div>Content for Tab 1</div>
+    </IonContent>
+  </IonPage>
+);
 
 export default Tab1;
