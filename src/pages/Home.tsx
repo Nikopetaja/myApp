@@ -15,7 +15,7 @@ const Home: React.FC = () => {
             <IonButtons slot='start'>
               <IonMenuButton autoHide={false}></IonMenuButton>
             </IonButtons>
-            <IonTitle>Home Page</IonTitle>
+            <IonTitle>Home</IonTitle>
           </IonToolbar>
         </IonHeader>
         <IonContent fullscreen>
@@ -26,7 +26,7 @@ const Home: React.FC = () => {
           </IonHeader>
           <ExploreContainer />
           <div>
-            <p>This is the Home Page content.</p>
+            <p>This is my app. <br></br> Here you can find two ways to navigate. <br></br> There is the toolbar at the bottom of the page and a side menu that opens by clicking on the button next to the header of this page.</p>
           </div>
         </IonContent>
       </IonPage>

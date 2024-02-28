@@ -19,7 +19,7 @@ const Welcome: React.FC<WelcomeProps> = ({ history }) => {
       </IonHeader>
       <IonContent className="ion-padding">
         <div>
-          <p>Welcome to the App!</p>
+          <p>Welcome to my App!</p>
           <IonButton expand="full" onClick={goToHome}>
             Get Started
           </IonButton>

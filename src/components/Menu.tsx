@@ -19,13 +19,10 @@ const Menu: React.FC<MenuProps> = ({ onMenuToggle }) => {
             Home
           </IonItem>
           <IonItem button routerLink='/tab1' onClick={onMenuToggle}>
-            Tab 1
+            ToDo-list
           </IonItem>
           <IonItem button routerLink='/tab2' onClick={onMenuToggle}>
-            Tab 2
-          </IonItem>
-          <IonItem button routerLink='/tab3' onClick={onMenuToggle}>
-            Tab 3
+            Contact
           </IonItem>
         </IonList>
       </IonContent>

@@ -10,12 +10,11 @@ const TabPage: React.FC = () => {
           <IonButtons slot='start'>
             <IonMenuButton autoHide={false}></IonMenuButton>
           </IonButtons>
-          <IonTitle>Header</IonTitle>
+          <IonTitle>Contact</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent className='ion-padding'>
-        <h1>Main content</h1>
-        <p>Click the icon in the top left to toggle the Menu.</p>
+        <p>On this page you will find contact information for giving feedback. <br></br> Phone number: +3587317887320 <br></br> Email: gravediggas240@gpaemail.eu <br></br> Note: These are not real phone numbers or emails! </p>
       </IonContent>
     </IonPage>
   );
