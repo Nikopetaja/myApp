@@ -1,29 +1,36 @@
 // Home.tsx
 import React from 'react';
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonIcon, IonButtons, IonMenuButton } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import './Home.css';
+import Menu from '../components/Menu';
 
 const Home: React.FC = () => {
   return (
-    <IonPage>
-      <IonHeader>
-        <IonToolbar>
-          <IonTitle>Home Page</IonTitle>
-        </IonToolbar>
-      </IonHeader>
-      <IonContent fullscreen>
-        <IonHeader collapse="condense">
+    <>
+      <Menu />
+      <IonPage>
+        <IonHeader>
           <IonToolbar>
-            <IonTitle size="large">Home Page</IonTitle>
+            <IonButtons slot='start'>
+              <IonMenuButton autoHide={false}></IonMenuButton>
+            </IonButtons>
+            <IonTitle>Home Page</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer />
-        <div>
-          <p>This is the Home Page content.</p>
-        </div>
-      </IonContent>
-    </IonPage>
+        <IonContent fullscreen>
+          <IonHeader collapse="condense">
+            <IonToolbar>
+              <IonTitle size="large">Home Page</IonTitle>
+            </IonToolbar>
+          </IonHeader>
+          <ExploreContainer />
+          <div>
+            <p>This is the Home Page content.</p>
+          </div>
+        </IonContent>
+      </IonPage>
+    </>
   );
 };
 

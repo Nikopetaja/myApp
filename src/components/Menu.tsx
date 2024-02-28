@@ -1,10 +1,13 @@
-// src/components/Menu.tsx
 import React from 'react';
-import { IonMenu, IonHeader, IonToolbar, IonTitle, IonContent, IonList, IonItem, IonLabel, IonIcon, IonRouterLink } from '@ionic/react';
+import { IonMenu, IonHeader, IonToolbar, IonTitle, IonContent, IonList, IonItem, IonRouterLink, IonMenuToggle } from '@ionic/react';
 
-const Menu: React.FC = () => {
+interface MenuProps {
+  onMenuToggle: () => void;
+}
+
+const Menu: React.FC<MenuProps> = ({ onMenuToggle }) => {
   return (
-    <IonMenu side="start" contentId="main-content">
+    <IonMenu contentId="main-content" onIonDidClose={onMenuToggle} type="overlay">
       <IonHeader>
         <IonToolbar>
           <IonTitle>Menu</IonTitle>
@@ -12,30 +15,22 @@ const Menu: React.FC = () => {
       </IonHeader>
       <IonContent>
         <IonList>
-          <IonItem button>
-            <IonRouterLink routerLink="/home">
-              <IonLabel>Home</IonLabel>
-            </IonRouterLink>
+          <IonItem button routerLink='/home' onClick={onMenuToggle}>
+            Home
           </IonItem>
-          <IonItem button> 
-            <IonRouterLink routerLink="/tab1">
-              <IonLabel>Tab 1</IonLabel>
-            </IonRouterLink>
+          <IonItem button routerLink='/tab1' onClick={onMenuToggle}>
+            Tab 1
           </IonItem>
-          <IonItem button>
-            <IonRouterLink routerLink="/tab2">
-              <IonLabel>Tab 2</IonLabel>
-            </IonRouterLink>
+          <IonItem button routerLink='/tab2' onClick={onMenuToggle}>
+            Tab 2
           </IonItem>
-          <IonItem button>
-            <IonRouterLink routerLink="/tab3">
-              <IonLabel>Tab 3</IonLabel>
-            </IonRouterLink>
-            </IonItem>
+          <IonItem button routerLink='/tab3' onClick={onMenuToggle}>
+            Tab 3
+          </IonItem>
         </IonList>
       </IonContent>
     </IonMenu>
   );
-};
+}
 
 export default Menu;
